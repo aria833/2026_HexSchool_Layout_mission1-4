@@ -1,6 +1,10 @@
-@import 'reset';
+@import './layout/reset';
 
-@import 'variable';
-@import 'layout';
-@import 'base';
-@import 'main';
+@import './layout/variable';
+@import './layout/layout';
+@import './layout/base';
+@import './layout/main';
+
+@import './layout/header';
+@import './layout/coupon';
+@import './layout/footer';
