@@ -1,0 +1,108 @@
+@import 'variable';
+
+/* 可以先將所有物件加上邊框，來判斷範圍
+    border會佔據距離，outline不會
+*,*:before,*:after{
+	outline: 1px solid red;
+}
+*/
+
+//品牌故事區域
+.brand {
+    background-image: 
+        /* linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),*/
+        url("../img/hero.png");
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: 543px) {
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("../img/hero-sm.png");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.brand-title {
+    color: $neutral0;
+    padding: 151px 0;
+    text-align: center;
+}
+
+
+
+//slogan區域
+.slogan {
+    text-align: center;
+    padding: 32px;
+    background-color: $primary100;
+
+    @media (max-width: 543px) {
+        padding: 24px;
+    }
+}
+
+//多區域共用
+.bottom-line {
+    border-bottom: 1px solid $neutral300;
+}
+
+
+.history-event {
+    ol {
+        li {
+            span:first-child {
+                padding-right: 8px;
+                border-right: 1px solid $neutral900;
+            }
+            span:last-child {
+                padding-left: 8px;
+            }
+        }
+    }
+}
+
+
+//品牌歷程區域
+.history-event {
+    ol {
+        list-style-type: disc;
+
+        //讓符號在容器裡面
+        list-style-position: inside;
+    }
+}
+
+//品牌理念區域
+.concept-list-border {
+    border-left: 3px solid $neutral300;
+    text-indent: 12px;
+}
+
+//品牌小故事區域
+.story-content {
+    color: $primary400;
+
+    &-link {
+        border-bottom: 1px solid $primary400;
+        margin-left: 4px;
+    }
+
+    ul {
+        li {
+            a {
+                padding: 8px 0;
+            }
+        }
+    }
+}
+
+.story-content {
+    a:hover {
+        color: $primary500;
+    }
+    a:active {
+        color: $primary400;
+    }
+}

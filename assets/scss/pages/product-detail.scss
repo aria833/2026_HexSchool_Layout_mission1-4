@@ -1,0 +1,178 @@
+@import 'variable';
+/* 可以先將所有物件加上邊框，來判斷範圍
+    border會佔據距離，outline不會
+
+*,*:before,*:after{
+	outline: 1px solid red;
+}
+*/
+
+
+main {
+    padding: 64px 0;
+    @media (max-width: 576px) {
+        padding: 0;
+    }
+}
+
+
+//商品照片
+.main-img {
+    ul {
+        row-gap: 8px; // 確保每行下面的間距
+        column-gap: 8px; // 左右卡片的間距
+    }
+    li {
+        width: calc((100% - 8px) / 2);
+    }
+
+    @media (max-width: 576px) {
+        li {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+//商品說明區域
+.main-detail {
+    //麵包屑
+    &-introduction-title-breadcrumb {
+        li {
+            color: $neutral600;
+        }
+        
+        li:last-child {
+            color: $neutral900;
+        }
+    }
+    //價格
+    &-introduction-price {
+        h5 {
+            color: $primary400;
+        }
+        p {
+            text-decoration: line-through;
+            color: $neutral500;
+        }
+    }
+    //顏色選項
+    &-specification-choice-color-option {
+        color: $neutral600;
+        img {
+            max-width: 64px;
+        }
+    }
+
+    //尺寸選項
+    &-specification-choice-size-option {
+        button {
+            padding: 12px 24px;
+            border: 1px solid $neutral300;
+        }
+        .default-selected {
+            border: 1px solid $neutral900;
+        }
+
+        .out-of-stock {
+            color: $neutral300;
+        }
+    }
+
+    //購買按鈕
+    &-specification-action {
+        button {
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            padding: 14px 0px;
+            border: 1px solid $neutral900;
+            
+            @media (max-width: 576px) {
+                width: 100%;
+            }
+        }
+        .button-dark {
+            background-color: $neutral900;
+            color: $neutral0;
+        }
+    }
+
+    //額外資訊
+    &-additional {
+        &-material,
+        &-notice,
+        &-maintenance {
+            padding: 12px 0;
+            border-bottom: 1px solid $neutral300;
+        }
+    }
+}
+
+.cta-collection:hover {
+    background-color: $primary100;
+}
+
+.cta-collection:active {
+    background-color: $primary200;
+}
+
+.button-dark:hover {
+    background-color: $neutral700;
+}
+
+.button-dark:active {
+    background-color: $neutral800;
+}
+
+
+.main-detail-specification-choice-size-option {
+    button:hover {
+        border: 1px solid $neutral600;
+    }
+}
+
+.heart-icon {
+    color: $neutral900;
+    font-size: 24px;
+    padding: 12px;
+}
+
+.sale-color {
+    color: $danger300;
+}
+
+.additional-color {
+    color: $neutral600;
+}
+
+//你可能也喜歡區域
+.recommend-section {
+    padding: 48px 0;
+    @media (max-width: 576px) {
+        padding: 40px 0;
+    }
+
+}
+.recommend-card {
+    max-width: 306px;
+}
+
+@media (max-width: 576px) {
+    .recommend {
+        ul {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;   /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
+            scrollbar-width: none; /* 隱藏原生的滾動條*/
+        }
+        &-card {
+            min-width: 300px;
+        }
+    }
+}
+

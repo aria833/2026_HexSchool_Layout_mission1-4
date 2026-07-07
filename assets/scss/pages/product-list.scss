@@ -1,0 +1,127 @@
+@import 'variable';
+
+/* 可以先將所有物件加上邊框，來判斷範圍
+    border會佔據距離，outline不會
+
+*,*:before,*:after{
+	outline: 1px solid red;
+}
+*/
+
+
+//麵包屑區域
+.main-breadcrumb {
+    li {
+        margin-top: 32px;
+        margin-bottom: 24px;
+        color: $neutral600;
+    }
+
+    li:last-child {
+        color: $neutral900;
+    }
+
+    span {
+        color: $neutral300;
+        font-weight: $font-weight-bold;
+        letter-spacing: 0;
+        line-height: 1.5;
+    }
+
+}
+
+.select-color {
+    color: $primary400;
+}
+
+.hover-color:hover {
+    color: $primary400;
+}
+
+
+// 商品導覽和商品卡片區域
+.main-product {
+    margin-top: 24px;
+    margin-bottom: 32px;
+
+    &-category {
+        padding-right: 24px;
+
+        a {
+            padding: 12px 0;
+        }
+    }
+
+    //商品卡片區域
+    //TODO:可能有更好的做法
+    &-section {
+        &-list {
+            ul {
+                row-gap: 48px; // 確保每三張卡片（換行後）下面間距是 48px
+                column-gap: 24px; // 左右卡片的間距
+            }
+            li {
+                width: calc((100% - 48px) / 3);
+            }
+
+             @media (max-width: 576px) {
+                ul {
+                    row-gap: 24px; // 確保換行後的間距
+                    column-gap: 12px; // 左右卡片的間距
+                }
+                li {
+                    width: calc((100% - 12px) / 2);
+                }
+            }   
+        }
+
+
+        //頁碼區域
+        &-page {
+            a {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &-number {
+                a:hover {
+                    background-color: $neutral100;
+                }
+                a:active {
+                    background-color: $primary300;
+                }
+            }
+        }
+        
+    }
+}
+
+.number-selected {
+    background-color: $primary300;
+}
+
+.page:hover {
+    background-color: $neutral100;
+}
+
+.page:active {
+    background-color: $neutral300;
+}
+
+
+//頁碼icon
+.bi-chevron-left {
+    color: rgba($neutral900, 0.4);
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px;
+}
+
+.bi-chevron-right {
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px;
+}

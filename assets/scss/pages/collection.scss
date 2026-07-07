@@ -1,0 +1,88 @@
+@import 'variable';
+
+
+/* 可以先將所有物件加上邊框，來判斷範圍
+    border會佔據距離，outline不會
+
+*,*:before,*:after{
+	outline: 1px solid red;
+}
+*/
+
+
+
+//main區域
+main {
+    padding: 64px 0;
+
+    @media (max-width: 576px) {
+        padding: 24px 0;
+    }
+}
+
+
+.main-items-card-content {
+    flex: 1;
+}
+
+.main-title {
+    i {
+        font-size: 24px;
+        padding: 8px;
+        color: $primary500;
+        background-color: $primary200;
+        border-radius: 1000px;
+
+        @media (max-width) {
+            font-size: 20px;
+            padding: 6px;
+        }
+    }
+
+    
+}
+
+.main-officeHour {
+    color: $primary400;
+    background-color: $primary100;
+    padding: 16px;
+
+    i {
+        font-size: 24px;
+    }
+}
+
+
+.main-items-card {
+    width: 100%;
+    border-bottom: 1px solid $neutral300;
+    
+    
+    img {
+        max-width: 120px;
+    }
+}
+
+.specification-color {
+    color: $neutral600;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+//預約按鈕
+.reserve {
+    color: $neutral0;
+    background-color: $neutral900;
+    padding: 12px 24px;
+}
+
+.reserve:hover {
+    background-color: $neutral700;
+}
+
+.reserve:active {
+    background-color: $neutral800;
+}

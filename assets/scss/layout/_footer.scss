@@ -1,0 +1,31 @@
+@import 'variable';
+
+//footer區域
+footer {
+    background-color: $neutral100;
+    padding: 64px 0;
+
+    @media (max-width: 576px) {
+        padding: 32px 0;
+    }
+}
+
+.footer {
+    &-nav {
+        &-link {
+            a {
+                padding: 12px 0;
+            }
+
+            a:hover {
+                color: $primary400;
+            }
+        }
+    }
+    &-copyright {
+        color: $neutral600;
+        padding-top: 32px;
+        text-align: center;
+        border-top: 1px solid $neutral300;
+    }
+}

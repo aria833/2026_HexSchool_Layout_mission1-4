@@ -1,0 +1,82 @@
+@import 'variable';
+
+
+/* 可以先將所有物件加上邊框，來判斷範圍
+    border會佔據距離，outline不會
+*,*:before,*:after{
+	outline: 1px solid red;
+}
+*/
+
+//註冊登入區塊
+.main-section-input {
+    background-image: url(../img/login/login-bg.png);
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+
+    @media (max-width: 576px) {
+        background-image: none;
+    }    
+}
+
+.main-section-input-content {
+    padding: 120px 80px;
+    border-radius: 16px;
+    height: 100%;
+
+    @media (max-width: 576px) {
+        padding: 32px 0;
+    }
+}
+
+.main-section-info {
+    h3 {
+        text-align: center;
+    }
+}
+
+
+.main-section-info-toggle {
+    li {
+        flex: 1;
+    }
+    
+    a {
+        padding: 12px 0;
+        text-align: center;
+    }
+
+}
+
+.button-active {
+    border-bottom: 2px solid $neutral900;
+}
+
+.button-default {
+    border-bottom: 2px solid $neutral300;
+    color: $neutral600;
+}
+
+.button-default:hover {
+    background-color: $neutral300;
+    }
+
+.main-section-method-card {
+    background-color: $neutral0;
+    border: 1px solid $neutral300;
+    padding: 12px;
+    align-items: center;
+
+    i {
+        font-size: 40px;
+    }
+}
+
+.main-section-method-card:hover {
+    background-color: $primary100;
+}
+
+.main-section-method-card:active {
+    background-color: $primary200;
+}

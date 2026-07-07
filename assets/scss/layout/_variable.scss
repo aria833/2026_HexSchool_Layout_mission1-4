@@ -1,0 +1,79 @@
+// 顏色 
+$primary100: #F5FEE7;
+$primary200: #E8FEC5;
+$primary300: #C0FA73;
+$primary400: #57A203;
+$primary500: #477A11;
+
+$neutral0: #FFFFFF;
+$neutral100: #F8F9FA;
+$neutral200: #E9ECEF;
+$neutral300: #DEE2E6;
+$neutral400: #CED4DA;
+$neutral500: #ADB5BD;
+$neutral600: #6C757D;
+$neutral700: #495057;
+$neutral800: #343A40;
+$neutral900: #212529;
+
+$danger100: #FCF1F1;
+$danger200: #EBA7A7;
+$danger300: #D74F4F;
+
+$warning100: #FEF6EC;
+$warning200: #F9C588;
+$warning300: #F38B12;
+
+$success100: #EFF8F4;
+$success200: #9AD1BA;
+$success300: #36A375;
+
+$info100: #EEF5FC;
+$info200: #97C3ED;
+$info300: #3087DB;
+
+// 文字顏色 
+$text-primary: $neutral900;
+$text-secondary: $neutral600;
+$text-muted: $neutral500;
+$text-highlight: $primary400;
+$text-on-dark: $neutral0;
+
+
+// 1. 字體家族 (Font Family)
+$font-family-primary: 'Noto Sans TC', sans-serif;
+$font-family-serif: 'Noto Serif TC', serif;
+
+// 2. 字重 (Font Weight)
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// 3. 基礎字型大小 (Font Size)
+$font-sizes: (
+  //display系列
+  'display1': 4rem,    // 64px 
+  'display2': 3rem,   // 48px 
+
+  //標題系列（Headings）
+  'h1': 2.5rem,    // 40px 
+  'h2': 2rem,      // 32px
+  'h3': 1.75rem,    // 28px
+  'h4': 1.5rem,    // 24px
+  'h5': 1.25rem,    // 20px
+  'h6': 1rem,    // 16px
+
+  //標籤系列（Labels）
+  'label-lg': 1.25rem,    // 20px
+  'label-md': 1rem,    // 16px
+  'label-sm': 0.875rem,    // 14px
+  'label-xs': 0.75rem,    // 12px
+
+  //內文系列（Paragraphs）
+  'paragraph-lg': 1.25rem,    // 20px
+  'paragraph-md': 1rem,    // 16px
+  'paragraph-sm': 0.875rem,    // 14px
+  'paragraph-xs': 0.75rem,    // 12px
+);
+
+

@@ -1,0 +1,458 @@
+// 通用的樣式（全站設定、連結、圖片等）
+
+//導入Google Font: Noto Sans TC
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* 全域都套用border-box
+    包含了padding和border的區域
+*/
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+
+
+// 清除<a>標籤預設的底線與藍色文字舊有樣式 
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* 清除圖片底部預設的空隙：img預設為inline元素，會依照文字基線（baseline）進行垂直對齊，因此會在底部保留約3~5px的空間，用來容納文字的descender 
+    處理方式1：display:block
+        將圖片改為區塊元素，直接避免 inline 元素的基線空隙問題
+    處理方式2：vertical-align: middle
+        保留 inline 特性，調整圖片與文字基線的對齊方式
+設定img為流動圖片，避免破版*/
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    //vertical-align: middle;  ->display:block不適用
+}
+
+
+
+// 清除button的原有樣式 
+button {
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+
+// display 
+.display1 {
+    font-size: map-get($font-sizes, 'display1');
+    line-height: 1.2;
+    font-weight: $font-weight-bold;
+}
+
+.display2 {
+    font-size: map-get($font-sizes, 'display2');
+    line-height: 1.2;
+    font-weight: $font-weight-bold;
+}
+
+// headings 
+.headings-h1 {
+    font-size: map-get($font-sizes, 'h1');
+    line-height: 1.2;
+    font-weight: $font-weight-bold;
+}
+
+.headings-h2 {
+    font-size: map-get($font-sizes, 'h2');
+    line-height: 1.2;
+    font-weight: $font-weight-bold;
+}
+
+.headings-h3 {
+    font-size: map-get($font-sizes, 'h3');
+    line-height: 1.2;
+    font-weight: $font-weight-bold;
+}   
+
+.headings-h4 {
+    font-size: map-get($font-sizes, 'h4');
+    line-height: 1.2;
+    font-weight: $font-weight-bold;
+}
+
+.headings-h5 {
+    font-size: map-get($font-sizes, 'h5');
+    line-height: 1.2;
+    font-weight: $font-weight-bold;
+}
+
+.headings-h6 {
+    font-size: map-get($font-sizes, 'h6');
+    line-height: 1.2;
+    font-weight: $font-weight-bold;
+}
+
+// label 
+.label-lg {
+    font-size: map-get($font-sizes, 'label-lg');
+    line-height: 1.5;
+    font-weight: $font-weight-medium;
+}
+
+.label-md {
+    font-size: map-get($font-sizes, 'label-md');
+    line-height: 1.5;
+    font-weight: $font-weight-medium;
+}
+
+.label-sm {
+    font-size: map-get($font-sizes, 'label-sm');
+    line-height: 1.5;
+    font-weight: $font-weight-medium;
+}
+
+.label-xs {
+    font-size: map-get($font-sizes, 'label-xs');
+    line-height: 1.5;
+    font-weight: $font-weight-medium;
+}
+
+
+
+// paragraph
+.paragraph-lg {
+    font-size: map-get($font-sizes, 'paragraph-lg');
+    line-height: 1.5;
+    font-weight: $font-weight-regular;
+}
+
+.paragraph-md {
+    font-size: map-get($font-sizes, 'paragraph-md');
+    line-height: 1.5;
+    font-weight: $font-weight-regular;
+}
+
+.paragraph-sm {
+    font-size: map-get($font-sizes, 'paragraph-sm');
+    line-height: 1.5;
+    font-weight: $font-weight-regular;
+}
+
+.paragraph-xs {
+    font-size: map-get($font-sizes, 'paragraph-xs');
+    line-height: 1.5;
+    font-weight: $font-weight-regular;
+}
+
+
+
+//間距
+.spacing-xxs {
+    gap: 4px;
+}
+
+.margin-bottom-xxs {
+    margin-bottom: 4px;
+}
+
+.spacing-xs {
+    gap: 8px;
+}
+
+.margin-bottom-xs {
+    margin-bottom: 8px;
+}
+
+.spacing-s {
+    gap: 12px;
+}
+
+.margin-bottom-s {
+    margin-bottom: 12px;
+}
+
+.spacing-m {
+    gap: 16px;
+}
+
+.margin-bottom-m {
+    margin-bottom: 16px;
+}
+
+.spacing-l {
+    gap: 24px;
+}
+
+.margin-bottom-l {
+    margin-bottom: 24px;
+}
+
+.spacing-xl {
+    gap: 32px;
+}
+
+.margin-bottom-xl {
+    margin-bottom: 32px;
+}
+.padding-bottom-xl {
+    padding-bottom: 32px;
+}
+
+
+.spacing-2xl {
+    gap: 40px;
+}
+
+.spacing-3xl {
+    gap: 48px;
+}
+
+.margin-bottom-3xl {
+    margin-bottom: 48px;
+}
+
+.padding-bottom-3xl {
+    padding-bottom: 48px;
+}
+
+.spacing-4xl {
+    gap: 56px;
+}
+
+.spacing-5xl {
+    gap: 64px;
+}
+
+.margin-bottom-5xl {
+    margin-bottom: 64px;
+}
+
+.spacing-6xl {
+    gap: 80px;
+}
+
+//radius
+.radius-xs {
+    border-radius: 2px;
+}
+
+.radius-sm {
+    border-radius: 4px;
+}
+
+.radius-md {
+    border-radius: 12px;
+}
+
+.radius-rounded {
+    border-radius: 1000px;
+}
+
+
+//flex box
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.jcsb {
+    justify-content: space-between;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: start;
+}
+
+/* 把右邊多餘的空間往左排 */
+.ml-auto{
+    margin-left: auto;
+}
+
+.m0-auto {
+    margin: 0 auto;
+}
+
+.d-none {
+    display: none;
+}
+
+@media (max-width: 543px) {
+    .display-mb-2 {
+        font-size: map-get($font-sizes, 'display2');
+        line-height: 1.2;
+        font-weight: $font-weight-bold;
+    }
+
+
+    .label-mb-sm {
+    font-size: map-get($font-sizes, 'label-sm');
+    line-height: 1.5;
+    font-weight: $font-weight-medium;
+    }
+
+    .label-mb-md {
+        font-size: map-get($font-sizes, 'label-md');
+        line-height: 1.5;
+        font-weight: $font-weight-medium;
+    }
+
+    .headings-mb-h3 {
+        font-size: map-get($font-sizes, 'h3');
+        line-height: 1.2;
+        font-weight: $font-weight-bold;
+    }
+
+    .headings-mb-h4 {
+        font-size: map-get($font-sizes, 'h4');
+        line-height: 1.2;
+        font-weight: $font-weight-bold;
+    }
+
+    .headings-mb-h5 {
+        font-size: map-get($font-sizes, 'h5');
+        line-height: 1.2;
+        font-weight: $font-weight-bold;
+    }
+
+    .headings-mb-h6 {
+        font-size: map-get($font-sizes, 'h6');
+        line-height: 1.2;
+        font-weight: $font-weight-bold;
+    }
+
+    .paragraph-mb-sm {
+        font-size: map-get($font-sizes, 'paragraph-sm');
+        line-height: 1.5;
+        font-weight: $font-weight-regular;
+    }
+
+    .paragraph-mb-md {
+        font-size: map-get($font-sizes, 'paragraph-md');
+        line-height: 1.5;
+        font-weight: $font-weight-regular;
+    }
+
+    //間隔
+    .spacing-mb-0 {
+        gap: 0px;
+    }
+
+
+    .spacing-mb-xxs {
+        gap: 4px;
+    }
+
+    .spacing-mb-xs {
+    gap: 8px;
+    }
+
+    .margin-bottom-mb-xs {
+    margin-bottom: 8px;
+    }
+
+     .spacing-mb-s {
+    gap: 12px;
+    }
+
+    .margin-bottom-mb-s {
+    margin-bottom: 12px;
+    }
+
+    .spacing-mb-m {
+    gap: 16px;
+    }
+
+    .margin-bottom-mb-m {
+    margin-bottom: 16px;
+    }
+
+    .spacing-mb-l {
+    gap: 24px;
+    }
+
+    .margin-bottom-mb-l {
+    margin-bottom: 24px;
+    }
+
+
+    .margin-bottom-mb-xl {
+    margin-bottom: 32px;
+    }
+
+    .margin-bottom-mb-2xl {
+    margin-bottom: 40px;
+    }
+
+
+    .px-mb-12 {
+        padding: 0px 12px;
+    }
+
+    /* 在md以下，原本隱藏的要打開 */
+    .d-mb-block{
+        display: block;
+    }
+    /* 在md以下，原本打開的要隱藏 */
+    .d-mb-none {
+        display: none;
+    }
+    .d-mb-column {
+        flex-direction: column;
+    }
+
+    .d-mb-flex {
+        display: flex;
+    }
+
+    .jcsb-mb {
+        justify-content: space-between;
+    }
+
+    .flex-mb-nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .align-mb-start {
+        align-items: start;
+    }
+
+    .align-mb-center {
+        align-items: center;
+    }
+
+    .text-mb-start {
+        text-align: start;
+    }
+
+    .w-md-full {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .col-mb-12 {
+    --span: 12;
+    --gap-count: calc(var(--span) - 1);
+    width: calc(
+        (100% - var(--gutter) * (var(--column) - 1)) / var(--column) * var(--span) + var(--gutter) * var(--gap-count)
+    );
+    }
+}
