@@ -1,4 +1,4 @@
-@import 'variable';
+@import '../layout/variable';
 
 /* 可以先將所有物件加上邊框，來判斷範圍
     border會佔據距離，outline不會
@@ -9,7 +9,7 @@
 
 //註冊登入區塊
 .main-section-input {
-    background-image: url(../img/login/login-bg.png);
+    background-image: url(../../images/login/login-bg.png);
     background-size: cover;
     background-position: center;
     flex-grow: 1;

@@ -1,4 +1,4 @@
-@import 'variable';
+@import '../layout/variable';
 
 /* 可以先將所有物件加上邊框，來判斷範圍
     border會佔據距離，outline不會
@@ -11,14 +11,14 @@
 .brand {
     background-image: 
         /* linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),*/
-        url("../img/hero.png");
+        url("../../images/hero.png");
     background-size: cover;
     background-position: center;
 
     @media (max-width: 543px) {
         background-image: 
             linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url("../img/hero-sm.png");
+            url("../../images/hero-sm.png");
         background-size: cover;
         background-position: center;
     }

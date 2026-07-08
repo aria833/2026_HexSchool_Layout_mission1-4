@@ -1,4 +1,4 @@
-@import 'variable';
+@import '../layout/variable';
 
 /* 可以先將所有物件加上邊框，來判斷範圍
     border會佔據距離，outline不會
@@ -34,7 +34,7 @@
 
 //hero區域
 .hero {
-    background-image: url(../img/index/banner.png);
+    background-image: url(../../images/index/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -44,7 +44,7 @@
     min-height: 800px;
 
     @media (max-width: 576px) {
-        background-image: url(../img/index/banner-sm.png);
+        background-image: url(../../images/index/banner-sm.png);
         min-height: 480px;
     }
 
@@ -158,13 +158,13 @@ main {
 
 //聯名區域
 .collaboration {
-    background-image: url(../img/index/banner-co-branded.png);
+    background-image: url(../../images/index/banner-co-branded.png);
     background-size: cover;
     background-position: center;
     margin: 48px 0;
 
     @media (max-width: 576px) {
-        background-image: url(../img/index/banner-co-branded-sm.png);
+        background-image: url(../../images/index/banner-co-branded-sm.png);
         background-size: cover;
         background-position: center;
         margin: 24px 0;
@@ -262,7 +262,7 @@ main {
 .series-card-item1 {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../img/product-list/product-6.png);
+        url(../../images/product-list/product-6.png);
     background-size: cover;
     background-position: center;
     color: $neutral0;
@@ -272,7 +272,7 @@ main {
 .series-card-item2 {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../img/index/product-11.png);
+        url(../../images/index/product-11.png);
     background-size: cover;
     background-position: center;
     color: $neutral0;
@@ -281,7 +281,7 @@ main {
 .series-card-item3 {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../img/product-list/product-9.png);
+        url(../../images/product-list/product-9.png);
     background-size: cover;
     background-position: center;
     color: $neutral0;
@@ -290,7 +290,7 @@ main {
 .series-card-item4 {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../img/index/product-10.png);
+        url(../../images/index/product-10.png);
     background-size: cover;
     background-position: center;
     color: $neutral0;
