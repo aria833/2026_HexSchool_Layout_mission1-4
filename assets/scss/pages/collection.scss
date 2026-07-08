@@ -52,7 +52,6 @@ main {
     width: 100%;
     border-bottom: 1px solid $neutral300;
     
-    
     img {
         max-width: 120px;
     }
@@ -71,12 +70,12 @@ main {
     color: $neutral0;
     background-color: $neutral900;
     padding: 12px 24px;
-}
 
-.reserve:hover {
-    background-color: $neutral700;
-}
+    &:hover {
+        background-color: $neutral700;
+    }
 
-.reserve:active {
-    background-color: $neutral800;
+    &:active {
+        background-color: $neutral800;
+    }
 }

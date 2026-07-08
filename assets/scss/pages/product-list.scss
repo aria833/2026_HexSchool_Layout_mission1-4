@@ -14,10 +14,10 @@
         margin-top: 32px;
         margin-bottom: 24px;
         color: $neutral600;
-    }
 
-    li:last-child {
-        color: $neutral900;
+        &:last-child {
+            color: $neutral900;
+        }
     }
 
     span {
@@ -37,7 +37,6 @@
     color: $primary400;
 }
 
-
 // 商品導覽和商品卡片區域
 .main-product {
     margin-top: 24px;
@@ -52,7 +51,6 @@
     }
 
     //商品卡片區域
-    //TODO:可能有更好的做法
     &-section {
         &-list {
             ul {
@@ -74,7 +72,6 @@
             }   
         }
 
-
         //頁碼區域
         &-page {
             a {
@@ -94,7 +91,6 @@
                 }
             }
         }
-        
     }
 }
 
@@ -109,7 +105,6 @@
 .page:active {
     background-color: $neutral300;
 }
-
 
 //頁碼icon
 .bi-chevron-left {

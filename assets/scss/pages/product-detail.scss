@@ -38,10 +38,10 @@ main {
     &-introduction-title-breadcrumb {
         li {
             color: $neutral600;
-        }
-        
-        li:last-child {
-            color: $neutral900;
+
+            &:last-child {
+                color: $neutral900;
+            }
         }
     }
     //價格
@@ -107,22 +107,24 @@ main {
     }
 }
 
-.cta-collection:hover {
-    background-color: $primary100;
+.cta-collection {
+    &:hover {
+        background-color: $primary100;
+    }
+
+    &:active {
+        background-color: $primary200;
+    }
 }
 
-.cta-collection:active {
-    background-color: $primary200;
+.button-dark {
+    &:hover {
+        background-color: $neutral700;
+    }
+    &:active {
+        background-color: $neutral800;
+    }  
 }
-
-.button-dark:hover {
-    background-color: $neutral700;
-}
-
-.button-dark:active {
-    background-color: $neutral800;
-}
-
 
 .main-detail-specification-choice-size-option {
     button:hover {

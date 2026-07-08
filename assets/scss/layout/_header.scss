@@ -1,5 +1,5 @@
 @import 'variable';
-//header 區域
+
 .header-area {
     padding: 16px 0;
 
@@ -10,21 +10,20 @@
             i {
                 font-size: 24px;
             }
+            &:hover {
+                color: $primary400;
+            }   
         }
-
-        a:hover {
-            color: $primary400;
-        }   
     }
 }   
 
 .header-nav-link {
     a {
         padding: 12px 0;
+        &:hover {
+            color: $primary400;
+        }  
     }
-    a:hover {
-        color: $primary400;
-    }  
 }
 
 .header-mb-nav-link {

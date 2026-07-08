@@ -64,11 +64,20 @@
     );
 }
 
-
 .col-10 {
     --span: 10;
     --gap-count: calc(var(--span) - 1);
     width: calc(
         (100% - var(--gutter) * (var(--column) - 1)) / var(--column) * var(--span) + var(--gutter) * var(--gap-count)
     );
+}
+
+@media (max-width: 543px) {
+    .col-mb-12 {
+    --span: 12;
+    --gap-count: calc(var(--span) - 1);
+    width: calc(
+        (100% - var(--gutter) * (var(--column) - 1)) / var(--column) * var(--span) + var(--gutter) * var(--gap-count)
+    );
+    }
 }

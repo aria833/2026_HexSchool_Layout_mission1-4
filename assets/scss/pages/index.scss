@@ -10,26 +10,24 @@
 
 .bg-color-primary200 {
     background-color: $primary200;
-}
 
-.bg-color-primary200:hover {
-    background-color: $primary300;
-}
-
-.bg-color-primary200:active {
-    background-color: $primary400;
+    &:hover {
+        background-color: $primary300;
+    }
+    &:active {
+        background-color: $primary400;
+    }
 }
 
 .bg-color-primary100 {
     background-color: $primary100;
-}
 
-.bg-color-primary100:hover {
-    background-color: $primary300;
-}
-
-.bg-color-primary100:active {
-    background-color: $primary400;
+    &:hover {
+        background-color: $primary300;
+    }
+    &:active {
+        background-color: $primary400;
+    }
 }
 
 //hero區域
@@ -48,72 +46,68 @@
         min-height: 480px;
     }
 
-}
+    &-content {
+        color: $neutral0;
+        position: absolute;
+        left: 112px;
+        top: 50%;
+        transform: translate(-25%);
 
-.hero-content {
-    color: $neutral0;
-    position: absolute;
-    left: 112px;
-    top: 50%;
-    transform: translate(-25%);
+        &-mb {
+            color: $neutral0;
+            padding: 155px 12px;
+        }
+    }
 }
-
-.hero-content-mb {
-    color: $neutral0;
-    padding: 155px 12px;
-}
-
 
 .button-buy {
     color: $neutral900;
     background-color: $primary300;
     padding: 12px 24px;
-}
 
-.button-buy:hover {
-    background-color: $primary400;
-    color: $neutral0;
-}
-
-.button-buy:active {
-    background-color: $primary500;
-    color: $neutral0;
+    &:hover {
+        background-color: $primary400;
+        color: $neutral0;
+    }
+    &:active {
+        background-color: $primary500;
+        color: $neutral0;
+    }
 }
 
 //main區域 
 main {
     padding: 64px 0;
-}
 
-.main-title {
-    h2 {
-        text-align: center;
+    &-title {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    &-content {
+        ul {
+            row-gap: 48px; // 確保每三張卡片（換行後）下面間距是 48px
+            column-gap: 24px; // 左右卡片的間距
+        }
+        li {
+            width: calc((100% - 24px) / 2);
+        }
+
+            @media (max-width: 576px) {
+            ul {
+                row-gap: 24px; // 確保換行後的間距
+                column-gap: 12px; // 左右卡片的間距
+            }
+            li {
+                width: calc((100% - 12px) / 2);
+            }
+        }
     }
 }
-
-
 
 .main-content-card {
     max-width: 636px;
-}
-.main-content {
-    ul {
-        row-gap: 48px; // 確保每三張卡片（換行後）下面間距是 48px
-        column-gap: 24px; // 左右卡片的間距
-    }
-    li {
-        width: calc((100% - 24px) / 2);
-    }
-
-        @media (max-width: 576px) {
-        ul {
-            row-gap: 24px; // 確保換行後的間距
-            column-gap: 12px; // 左右卡片的間距
-        }
-        li {
-            width: calc((100% - 12px) / 2);
-        }
-    }   
 }
 
 .hot {
@@ -138,22 +132,23 @@ main {
     }
 }
 
+.hot-content {
+    &-list {
+        position: relative;
+    }
+    
+    &-tag {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 8px 12px;
+        color: $primary400;
+        background-color: $primary100;
+    }
 
-.hot-content-list {
-    position: relative;
-}
-
-.hot-content-tag {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 8px 12px;
-    color: $primary400;
-    background-color: $primary100;
-}
-
-.hot-content-card {
-    max-width: 306px;
+    &-card {
+        max-width: 306px;
+    }
 }
 
 //聯名區域
@@ -244,57 +239,59 @@ main {
     li {
         min-width: 306px;
         @media (max-width: 576px) {
-           min-width: 0;
-           min-width: calc((100% - 12px) / 2);
+            min-width: 0;
+            min-width: calc((100% - 12px) / 2);
         }
     }
-}
 
-.series-card-content {
-    padding: 118px 0;
-    
-    @media (max-width: 576px) {
-        padding-top: 62.5px;
-        padding-bottom: 61px;
+    &-content {
+        padding: 118px 0;
+        
+        @media (max-width: 576px) {
+            padding-top: 62.5px;
+            padding-bottom: 61px;
+        }
     }
-}
 
-.series-card-item1 {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../../images/product-list/product-6.png);
-    background-size: cover;
-    background-position: center;
-    color: $neutral0;
-    aspect-ratio: 1 / 1;
-}
+    &-item1 {
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(../../images/product-list/product-6.png);
+        background-size: cover;
+        background-position: center;
+        color: $neutral0;
+        aspect-ratio: 1 / 1;
+    }
 
-.series-card-item2 {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../../images/index/product-11.png);
-    background-size: cover;
-    background-position: center;
-    color: $neutral0;
-    aspect-ratio: 1 / 1;
-}
-.series-card-item3 {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../../images/product-list/product-9.png);
-    background-size: cover;
-    background-position: center;
-    color: $neutral0;
-    aspect-ratio: 1 / 1;
-}
-.series-card-item4 {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../../images/index/product-10.png);
-    background-size: cover;
-    background-position: center;
-    color: $neutral0;
-    aspect-ratio: 1 / 1;
+    &-item2 {
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(../../images/index/product-11.png);
+        background-size: cover;
+        background-position: center;
+        color: $neutral0;
+        aspect-ratio: 1 / 1;
+    }
+
+    &-item3 {
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(../../images/product-list/product-9.png);
+        background-size: cover;
+        background-position: center;
+        color: $neutral0;
+        aspect-ratio: 1 / 1;
+    }
+
+    &-item4 {
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(../../images/index/product-10.png);
+        background-size: cover;
+        background-position: center;
+        color: $neutral0;
+        aspect-ratio: 1 / 1;
+    }
 }
 
 //靈感區域
@@ -332,7 +329,6 @@ main {
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;   /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
             scrollbar-width: none; /* 隱藏原生的滾動條*/
-
             
         }
         li {

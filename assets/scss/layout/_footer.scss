@@ -1,6 +1,5 @@
 @import 'variable';
 
-//footer區域
 footer {
     background-color: $neutral100;
     padding: 64px 0;
@@ -15,10 +14,9 @@ footer {
         &-link {
             a {
                 padding: 12px 0;
-            }
-
-            a:hover {
-                color: $primary400;
+                &:hover {
+                    color: $primary400;
+                }
             }
         }
     }
