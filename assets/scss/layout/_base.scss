@@ -1,5 +1,4 @@
-// 通用的樣式（全站設定、連結、圖片等）
-
+// 通用的樣式（全站設定、連結、圖片等）ｚ
 //導入Google Font: Noto Sans TC
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
@@ -9,7 +8,6 @@
 *,*::before,*::after{
 	box-sizing: border-box;
 }
-
 
 // 清除<a>標籤預設的底線與藍色文字舊有樣式 
 a {
@@ -31,8 +29,6 @@ img {
     //vertical-align: middle;  ->display:block不適用
 }
 
-
-
 // 清除button的原有樣式 
 button {
     font: inherit;
@@ -40,10 +36,6 @@ button {
     background-color: transparent;
     border: none;
 }
-
-
-
-
 
 // display 
 .display1 {
@@ -120,8 +112,6 @@ button {
     font-weight: $font-weight-medium;
 }
 
-
-
 // paragraph
 .paragraph-lg {
     font-size: map-get($font-sizes, 'paragraph-lg');
@@ -146,8 +136,6 @@ button {
     line-height: 1.5;
     font-weight: $font-weight-regular;
 }
-
-
 
 //間距
 .spacing-xxs {
@@ -354,7 +342,6 @@ button {
         gap: 0px;
     }
 
-
     .spacing-mb-xxs {
         gap: 4px;
     }
@@ -445,8 +432,6 @@ button {
         width: 100%;
         height: auto;
     }
-
-
 
     .col-mb-12 {
     --span: 12;

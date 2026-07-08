@@ -1,6 +1,5 @@
 @import 'variable';
 
-
 /* 可以先將所有物件加上邊框，來判斷範圍
     border會佔據距離，outline不會
 
@@ -8,7 +7,6 @@
 	outline: 1px solid red;
 }
 */
-
 
 .bg-color-primary200 {
     background-color: $primary200;
@@ -22,7 +20,6 @@
     background-color: $primary400;
 }
 
-
 .bg-color-primary100 {
     background-color: $primary100;
 }
@@ -34,7 +31,6 @@
 .bg-color-primary100:active {
     background-color: $primary400;
 }
-
 
 //hero區域
 .hero {
@@ -120,11 +116,6 @@ main {
     }   
 }
 
-            
-
-
-
-
 .hot {
     padding: 64px 0;
 
@@ -132,7 +123,6 @@ main {
         padding: 40px 0;
     }
 }
-
 
 @media (max-width: 576px) {
     .hot-content-overall {
@@ -149,15 +139,9 @@ main {
 }
 
 
-
-
 .hot-content-list {
     position: relative;
 }
-
-
-
-
 
 .hot-content-tag {
     position: absolute;
@@ -167,9 +151,6 @@ main {
     color: $primary400;
     background-color: $primary100;
 }
-
-
-
 
 .hot-content-card {
     max-width: 306px;
@@ -190,8 +171,6 @@ main {
     }
 }
 
-
-
 .collaboration-content {
     padding-top: 100px;
     padding-bottom: 8px;
@@ -205,7 +184,6 @@ main {
     }
     
 }
-
 
 .decoration-2 {
     position: absolute;
@@ -228,8 +206,6 @@ main {
         right: -10%;
     }
 }
-
-
 
 .collaboration-content-campaign-word-title-main-kevin {
     h1 {
@@ -260,7 +236,6 @@ main {
 }
 
 //series區域
-
 .series-content {
     margin: 64px 0;
 }
@@ -321,10 +296,6 @@ main {
     color: $neutral0;
     aspect-ratio: 1 / 1;
 }
-
-
-
-
 
 //靈感區域
 .inspiration-content {

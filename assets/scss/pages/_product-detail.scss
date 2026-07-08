@@ -7,14 +7,12 @@
 }
 */
 
-
 main {
     padding: 64px 0;
     @media (max-width: 576px) {
         padding: 0;
     }
 }
-
 
 //商品照片
 .main-img {
@@ -32,9 +30,6 @@ main {
         }
     }
 }
-
-
-
 
 //商品說明區域
 .main-detail {
@@ -175,4 +170,3 @@ main {
         }
     }
 }
-
