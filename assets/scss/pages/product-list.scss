@@ -82,16 +82,16 @@
                 align-items: center;
                 cursor: pointer;
             }
-
-            &-number {
-                button:hover {
-                    background-color: $neutral100;
-                }
-                button:active {
-                    background-color: $primary300;
-                }
-            }
         }
+    }
+}
+
+.page-button {
+    &:hover {
+        background-color: $neutral100;
+    }
+    &:active {
+        background-color: $primary300;
     }
 }
 
@@ -99,12 +99,13 @@
     background-color: $primary300;
 }
 
-.page:hover {
-    background-color: $neutral100;
-}
-
-.page:active {
-    background-color: $neutral300;
+.page {
+    &:hover {
+        background-color: $neutral100;
+    }
+    &:active {
+        background-color: $neutral300;
+    }
 }
 
 //頁碼icon
