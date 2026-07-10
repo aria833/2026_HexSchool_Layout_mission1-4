@@ -74,19 +74,20 @@
 
         //頁碼區域
         &-page {
-            a {
+            button {
                 width: 40px;
                 height: 40px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
             }
 
             &-number {
-                a:hover {
+                button:hover {
                     background-color: $neutral100;
                 }
-                a:active {
+                button:active {
                     background-color: $primary300;
                 }
             }
