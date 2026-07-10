@@ -6,7 +6,7 @@
     <title>URBNSTEP</title>
 
     <%- include('./layout/head'); %>
-
+    <%- include('./layout/aos-css'); %>
 </head>
 <body>
 
@@ -105,8 +105,8 @@
                 <div class="collaboration-content-campaign">
                     <div class="layout col-6 m0-auto col-mb-12">        
                         <div class="collaboration-content-campaign-word d-flex flex-column align-center">
-                            <img src="../assets/images/index/sparkle.svg" alt="decoration" class="decoration-1">
-                            <img src="../assets/images/index/star.svg" alt="decoration" class="decoration-2">
+                            <img src="../assets/images/index/sparkle.svg" alt="decoration" class="decoration-1" data-aos="fade-right">
+                            <img src="../assets/images/index/star.svg" alt="decoration" class="decoration-2" data-aos="fade-left">
                             <div class="collaboration-content-campaign-word-title margin-bottom-3xl margin-bottom-mb-xl">
                                 <div class="collaboration-content-campaign-word-title-main margin-bottom-xl">
                                     <div class="collaboration-content-campaign-word-title-main-kevin d-flex jcc spacing-l spacing-mb-xs margin-bottom-m d-mb-column align-center">
@@ -181,7 +181,7 @@
                             <img src="../assets/images/index/inspiration-1.png" alt="inspiration photo">
                             <img src="../assets/images/index/inspiration-2.png" alt="inspiration photo">
                         </div>
-                        <img src="../assets/images/index/inspiration-3.png" alt="inspiration photo">
+                        <img src="../assets/images/index/inspiration-3.png" alt="inspiration photo" data-aos="fade-up">
                     </div>
 
                     <div class="inspiration-content-photo-area2 d-flex flex-wrap spacing-xs">
@@ -194,7 +194,7 @@
                     </div>
             
                     <div class="inspiration-content-photo-area3">
-                        <img src="../assets/images/index/inspiration-10.png" alt="inspiration photo" class="margin-bottom-xs">
+                        <img src="../assets/images/index/inspiration-10.png" alt="inspiration photo" class="margin-bottom-xs" data-aos="fade-up">
                         <div class="inspiration-content-photo-area3-bottom d-flex jcsb">
                             <img src="../assets/images/index/inspiration-11.png" alt="inspiration photo">
                             <img src="../assets/images/index/inspiration-12.png" alt="inspiration photo">
@@ -226,5 +226,6 @@
     <%- include('./layout/footer'); %>
     <script type="module" src="../main.js"></script>
     <script type="module" src="../index.js"></script>
+    <%- include('./layout/aos-js'); %>
 </body>
 </html>
