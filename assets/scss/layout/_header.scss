@@ -1,5 +1,14 @@
 @import 'variable';
 
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: $neutral0;
+    width: 100%;
+}
+
 .header-area {
     padding: 16px 0;
 
