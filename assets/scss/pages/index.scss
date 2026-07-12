@@ -128,7 +128,8 @@ main {
         scrollbar-width: none; /* 隱藏原生的滾動條*/
     }
     .hot-content-list {
-        min-width: 351px;
+        min-width: 300px;
+        flex-shrink: 0;
     }
 }
 
