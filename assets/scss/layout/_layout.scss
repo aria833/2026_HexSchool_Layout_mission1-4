@@ -73,6 +73,10 @@
 }
 
 @media (max-width: 543px) {
+    .col-mb-0 {
+        width: 0;
+    }
+
     .col-mb-12 {
     --span: 12;
     --gap-count: calc(var(--span) - 1);
