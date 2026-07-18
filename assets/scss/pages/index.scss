@@ -78,7 +78,9 @@
 //main區域 
 main {
     padding: 64px 0;
+}
 
+.main {
     &-title {
         h2 {
             text-align: center;
@@ -321,17 +323,14 @@ main {
 @media (max-width: 576px) {
     .inspiration-content-photo-mb {
         overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;   /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
+        scrollbar-width: none; /* 隱藏原生的滾動條*/
 
-        ul {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            align-items: stretch;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;   /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
-            scrollbar-width: none; /* 隱藏原生的滾動條*/
-            
-        }
         li {
             max-width: 300px;
             flex-shrink: 0;
