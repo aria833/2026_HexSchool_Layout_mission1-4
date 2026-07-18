@@ -1,4 +1,5 @@
 @import '../layout/variable';
+@import '../layout/mixin';
 
 /* 可以先將所有物件加上邊框，來判斷範圍
     border會佔據距離，outline不會
@@ -41,7 +42,7 @@
     position: relative;
     min-height: 800px;
 
-    @media (max-width: 576px) {
+    @include mobile {
         background-image: url(../../images/index/banner-sm.png);
         min-height: 480px;
     }
@@ -96,7 +97,7 @@ main {
             width: calc((100% - 24px) / 2);
         }
 
-            @media (max-width: 576px) {
+            @include mobile {
             ul {
                 row-gap: 24px; // 確保換行後的間距
                 column-gap: 12px; // 左右卡片的間距
@@ -115,12 +116,12 @@ main {
 .hot {
     padding: 64px 0;
 
-    @media (max-width: 576px) {
+    @include mobile {
         padding: 40px 0;
     }
 }
 
-@media (max-width: 576px) {
+@include mobile {
     .hot-content-overall {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -161,7 +162,7 @@ main {
     background-position: center;
     margin: 48px 0;
 
-    @media (max-width: 576px) {
+    @include mobile {
         background-image: url(../../images/index/banner-co-branded-sm.png);
         background-size: cover;
         background-position: center;
@@ -177,7 +178,7 @@ main {
     position: relative;
     overflow: hidden;
 
-    @media (max-width: 576px) {
+    @include mobile {
         padding: 64px 0;
     }
     
@@ -188,7 +189,7 @@ main {
     top: 68px;
     left: 20%;
 
-    @media (max-width: 576px) {
+    @include mobile {
         top: 32px;
         left: -10%;
     }
@@ -199,7 +200,7 @@ main {
     bottom: 132px;
     right: 20%;
 
-    @media (max-width: 576px) {
+    @include mobile {
         bottom: 104px;
         right: -10%;
     }
@@ -241,7 +242,7 @@ main {
 .series-card {
     li {
         min-width: 306px;
-        @media (max-width: 576px) {
+        @include mobile {
             min-width: 0;
             min-width: calc((100% - 12px) / 2);
         }
@@ -250,7 +251,7 @@ main {
     &-content {
         padding: 118px 0;
         
-        @media (max-width: 576px) {
+        @include mobile {
             padding-top: 62.5px;
             padding-bottom: 61px;
         }
@@ -301,7 +302,7 @@ main {
 .inspiration-content {
     margin: 64px 0;
 
-    @media (max-width: 576px) {
+    @include mobile {
         margin: 40px 0;
     }
 }
@@ -320,7 +321,7 @@ main {
     }
 }
 
-@media (max-width: 576px) {
+@include mobile {
     .inspiration-content-photo-mb {
         overflow: hidden;
         display: flex;
