@@ -1,5 +1,5 @@
-@import '../layout/variable';
-@import '../layout/mixin';
+@import '../helper/variable';
+@import '../helper/mixin';
 
 /* 可以先將所有物件加上邊框，來判斷範圍
     border會佔據距離，outline不會
@@ -16,7 +16,7 @@
         background-size: cover;
         background-position: center;
 
-        @media (max-width: 543px) {
+        @include mobile {
             background-image: 
                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url("../../images/hero-sm.png");
@@ -37,7 +37,7 @@
     padding: 32px;
     background-color: $primary100;
 
-    @media (max-width: 543px) {
+    @include mobile {
         padding: 24px;
     }
 }

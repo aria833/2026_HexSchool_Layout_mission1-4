@@ -1,10 +1,10 @@
-@import './layout/reset';
+@import './base/reset';
 
-@import './layout/variable';
-@import './layout/mixin';
-@import './layout/layout';
-@import './layout/base';
-@import './layout/main';
+@import './helper/variable';
+@import './helper/mixin';
+@import './helper/layout';
+@import './base/base';
+@import './base/main';
 
 @import './layout/header';
 @import './layout/coupon';

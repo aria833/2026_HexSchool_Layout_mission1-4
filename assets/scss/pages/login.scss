@@ -1,5 +1,5 @@
-@import '../layout/variable';
-@import '../layout/mixin';
+@import '../helper/variable';
+@import '../helper/mixin';
 
 /* 可以先將所有物件加上邊框，來判斷範圍
     border會佔據距離，outline不會
