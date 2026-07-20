@@ -12,14 +12,14 @@
 .brand {
         background-image: 
             /* linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),*/
-            url("../../images/hero.png");
+            url("../images/hero.png");
         background-size: cover;
         background-position: center;
 
         @include mobile {
             background-image: 
                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url("../../images/hero-sm.png");
+                url("../images/hero-sm.png");
             background-size: cover;
             background-position: center;
         }
